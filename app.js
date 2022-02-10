@@ -8,7 +8,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/wikiDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin-karina:112545@cluster0.gbw5o.mongodb.net/wikiDB?retryWrites=true&w=majority");
+
 const articleSchema = {
     title: String, 
     content: String
@@ -104,6 +105,13 @@ app.route('/articles/:articleTitle')
     });
 
 // =======================================
-app.listen(3000, function() {
-  console.log("Server started on port 3000");
-});
+// ====================port================================
+
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+ 
+app.listen(port, function() {
+  console.log("Server started succesfully");
+}); 
