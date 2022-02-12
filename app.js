@@ -105,7 +105,6 @@ app.route('/articles/:articleTitle')
     });
 
 // =======================================
-// ====================port================================
 
 let port = process.env.PORT;
 if (port == null || port == "") {
