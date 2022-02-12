@@ -12,10 +12,12 @@
  
 
 ### Description
-- Self-built RESTful API that stores  
+- Simple self-built RESTful API that stores data like Wikipedia.
+- Users can GET, PUT, PATCH, and DELETE articles by using **Postman**.
+- The API is written purely in **JavaScript**, runs by **Node.js**, data is stored in **MongoDB** and can be changed by using **Postman** for better visualisation.
 
 
-## Re-populate Database
+## Initial Data
 ```
 {
     "_id" : "5c18e1892998bdb3b3d355bf",
@@ -47,8 +49,8 @@
 
 {
     "_id" : "5c18f35cde40ab6cc551cd60",
-    "title" : "Jack Bauer",
-    "content" : "Jack Bauer once stepped into quicksand. The quicksand couldn't escape and nearly drowned.",
+    "title" : "HTML",
+    "content" : "///",
     "__v" : 0
 }
 ```
