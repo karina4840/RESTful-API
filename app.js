@@ -19,7 +19,7 @@ const Article = new mongoose.model("Article", articleSchema);
 
 app.route('/articles')
 .get(function (req, res) {
-    Article.find(function (err, foundArticle) {
+    Article.findOne(function (err, foundArticle) {
         if (!err) {
             res.send(foundArticle);
         } else {
