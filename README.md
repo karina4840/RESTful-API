@@ -55,8 +55,7 @@
 
 ### Screenshots
 
-<img src="https://github.com/karina4840/to-do/blob/main/to-do-screen.png?raw=true" width=400>  
-<img src="https://github.com/karina4840/to-do/blob/main/database-screen.png?raw=true" width=400> 
+<img src="https://github.com/karina4840/restful-api/blob/main/example/api-example.gif?raw=true"/> 
 
 ***
 
